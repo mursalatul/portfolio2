@@ -16,10 +16,10 @@
 <body>
 
   <!-- navber -->
-  <div class="row">
-    <nav class="navbar navbar-expand-lg" style="background-color: #b0deff;">
+
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #b0deff;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <a class="navbar-brand" href="/index.html">Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,15 +30,33 @@
               <a class="nav-link" aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/achievements.html">Achievements</a>
+              <a class="nav-link" href="#achievements">Achievements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <button class="btn btn-outline-success" type="submit">Dark Mode</button>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+            <button class="btn btn-outline-success mood-btn " type="submit" ><img height="20" src="img/moon-svgrepo-com.svg"></button>
+            <style>
+              .mood-btn {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%; 
+                border: none; 
+                background-color: black; 
+                color: white; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                font-size: 16px; 
+                cursor: pointer;
+              }
+            </style>
+          </div>
     </nav>
-  </div>
+
 
   <div class="container">
     <div class="row mx-auto my-auto">
@@ -130,7 +148,7 @@
     <hr class="border border-primary border-3 opacity-50">
 
     <!-- achievements -->
-    <p class="h2">Archievements</p>
+    <p class="h2" id="achievements">Archievements</p>
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row justify-content-center">
@@ -177,7 +195,7 @@
     <hr class="border border-primary border-3 opacity-50">
 
     <!-- Projects -->
-    <p class="h2">Projects</p>
+    <p class="h2" id="projects">Projects</p>
     <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active ">
@@ -225,34 +243,75 @@
   </div>
 
   <!-- footer -->
-  <footer class="bg-body-tertiary text-center">
+  <footer class="bg-body-tertiary text-center" id="contacts">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <!-- Facebook -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
-          role="button"><i class="fab fa-facebook"></i></a>
-
-
-        <!-- Twitter -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
-          role="button"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
-          role="button"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
-          role="button"><i class="fab fa-instagram"></i></a>
-
-        <!-- Linkedin -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
-          role="button"><i class="fab fa-linkedin-in"></i></a>
-        <!-- Github -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!"
-          role="button"><i class="fab fa-github"></i></a>
+        <div class="container" id="contact">
+          <table class="table d-flex justify-content-center">
+            <tr>
+              <td>
+                <!-- direct message icon-->
+                <abbr title="Direct message">
+                  <a href="https://www.linkedin.com/in/mursalatul/" id='linkedin'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                      viewBox="0 0 40 44">
+                      <path fill="#0078d4"
+                        d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z">
+                      </path>
+                      <path
+                        d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z"
+                        opacity=".05"></path>
+                      <path
+                        d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z"
+                        opacity=".07"></path>
+                      <path fill="#fff"
+                        d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z">
+                      </path>
+                    </svg>
+                  </a>
+                </abbr>
+              </td>
+              <td>
+                <!-- facebook icon-->
+                <abbr title="Facebook">
+                  <a href="https://www.facebook.com/mursalatul.pallob/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-facebook" viewBox="0 0 16 16" id="id_contact_facebook">
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                  </a>
+                </abbr>
+              </td>
+              <td>
+                <!-- email icon -->
+                <abbr title="Gmail">
+                  <a href="mailto:mursalatulislmapallob@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
+                    </svg>
+                  </a>
+                </abbr>
+              </td>
+              <td>
+                <!-- github icon-->
+                <abbr title="Github">
+                  <a href="https://github.com/mursalatul/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-github" viewBox="0 0 16 16" id="id_contact_github">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                  </a>
+                </abbr>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
       <!-- Section: Social media -->
     </div>
