@@ -27,10 +27,10 @@ function swapCardColor() {
     let card = document.getElementsByClassName("bg-swap");
     for (let i = 0; i < card.length; i++) { // Loop through each element
         let currentColor = window.getComputedStyle(card[i]).backgroundColor; // Get computed color
-        if (currentColor === 'rgb(210, 154, 242)') { // Check if color is white
+        if (currentColor === 'rgb(93, 173, 226)') { // Check if color is white
             card[i].style.backgroundColor = 'rgb(75, 96, 106)'; // Set color to black
         } else {
-            card[i].style.backgroundColor = 'rgb(210, 154, 242)'; // Set color to white
+            card[i].style.backgroundColor = 'rgb(93, 173, 226)'; // Set color to white
         }
     }
 }
