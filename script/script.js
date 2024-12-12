@@ -48,11 +48,15 @@ function swapNavberColor() {
 
 
 function moodchange() {
-    // check currect theme
-    // let myname = document.getElementById("my-name");
-    // if (myname.style.color == 'black') {
-
-    // }
+    let moodchangebtn = document.getElementById("moodchangebtn");
+    if (moodchangebtn.style.backgroundColor === 'black') {
+        moodchangebtn.style.backgroundColor = 'white';
+        moodchangebtn.innerHTML = '<img height="20" src="img/light.png">';
+    }
+    else {
+        moodchangebtn.style.backgroundColor = 'black';
+        moodchangebtn.innerHTML = '<img height="20" src="img/moon-svgrepo-com.svg">'
+    }
     swapBodyColor();
     swapTextColor();
     swapCardColor();
