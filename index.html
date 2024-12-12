@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
-
+  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="https://www.gstatic.com/charts/loader.js"></script>
@@ -13,13 +13,13 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: white;">
 
   <!-- navber -->
 
   <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #b0deff;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">Portfolio</a>
+      <a class="navbar-brand text-here" href="/index.html">Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,21 +27,21 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link text-here" aria-current="page" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#achievements">Achievements</a>
+            <a class="nav-link text-here" href="#achievements">Achievements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link text-here" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link text-here" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacts">Contacts</a>
+            <a class="nav-link text-here" href="#contacts">Contacts</a>
           </li>
-          <button class="btn btn-outline-success mood-btn " type="submit"><img height="20"
+          <button class="btn btn-outline-success mood-btn " type="submit" onclick="moodchange()"><img height="20"
               src="img/moon-svgrepo-com.svg"></button>
           <style>
             .mood-btn {
@@ -65,8 +65,8 @@
   <div class="container">
     <div class="row mx-auto my-auto">
       <div class="col-8  mx-auto my-auto">
-        <p class="h1 text-center">Md Mursalatul Islam Pallob</p>
-        <p class="text-center">Competitive Programmer, Python developer</p>
+        <p class="h1 text-center text-here">Md Mursalatul Islam Pallob</p>
+        <p class="text-center text-here">Competitive Programmer, Python developer</p>
       </div>
       <div class="col-4  text-center mx-auto my-auto"><img src="img/myimg.png" width="400"></div>
     </div>
@@ -76,8 +76,8 @@
     <div class="row">
       <div class="col">
         <div class="my-card">
-          <p class="my-title">About</p>
-          <p>I am a passionate Python developer with a strong foundation in competitive programming. I enjoy solving
+          <p class="my-title text-here">About</p>
+          <p class="text-here">I am a passionate Python developer with a strong foundation in competitive programming. I enjoy solving
             complex
             problems and constantly push myself to improve logical thinking and algorithmic skills. My experience in
             competitive programming has sharpened my ability to tackle challenges efficiently, and I apply this mindset
@@ -86,11 +86,11 @@
             development work. I am always eager to learn, create, and contribute to meaningful projects.</p>
         </div>
       </div>
-      <div class="col">
+      <div class="col ">
         <div class="my-card">
-          <p class="my-title">I have Worked With</p>
+          <p class="my-title text-here">I have Worked With</p>
           <p>
-            <ul>
+            <ul class="text-here">
               <li>CMD based system.</li>
               <li>Emotion recognization with AI</li>
               <li>Agricultural Automation</li>
@@ -102,8 +102,8 @@
 
       <div class="col">
         <div class="my-card">
-          <p class="my-title">Experience</p>
-          <ol>
+          <p class="my-title text-here">Experience</p>
+          <ol class="text-here">
             <li>
               ML model developer <b>[1 year]</b>
             </li>
@@ -123,28 +123,28 @@
 
     <!-- education -->
     <div class="my-card">
-      <h1 class="my-title">Academic</h1>
+      <h1 class="my-title text-here">Academic</h1>
       <div class="my-content">
         <div class="my-item">
-          <span class="my-label">University:</span>
-          <span class="my-value">Dhaka International University</span>
+          <span class="my-label text-here">University:</span>
+          <span class="my-value text-here">Dhaka International University</span>
         </div>
         <div class="my-item">
-          <span class="my-label">Degree:</span>
-          <span class="my-value">Bachelor of Science, Computer Science & Engineering</span>
+          <span class="my-label text-here">Degree:</span>
+          <span class="my-value text-here">Bachelor of Science, Computer Science & Engineering</span>
         </div>
         <div class="my-item">
-          <span class="my-label">Graduation Year:</span>
-          <span class="my-value">2025</span>
+          <span class="my-label text-here">Graduation Year:</span>
+          <span class="my-value text-here">2025</span>
         </div>
       </div>
     </div>
     <hr class="border border-primary border-3 opacity-50">
 
     <!-- Competitive Programming history -->
-    <p class="h2" id="skills">Competitive Programming History</p>
-    <p>Number of Problem Solved: 1400+</p>
-    <div class="mx-auto my-auto" id="myChart" style="max-width:700px; height:400px"></div>
+    <p class="h2 text-here" id="skills">Competitive Programming History</p>
+    <p class="text-here">Number of Problem Solved: 1400+</p>
+    <div class="mx-auto my-auto text-here" id="myChart" style="max-width:700px; height:400px"></div>
 
     <script>
       google.charts.load('current', { packages: ['corechart'] });
@@ -179,7 +179,7 @@
     </script>
 
     <hr class="border border-primary border-3 opacity-50">
-    <p class="h2">Programming Language Proficiency</p>
+    <p class="h2 text-here">Programming Language Proficiency</p>
     <div class=" mx-auto my-auto" id="myPiChart" style="max-width:700px; height:400px"></div>
 
     <script>
@@ -213,43 +213,43 @@
     <hr class="border border-primary border-3 opacity-50">
 
     <!-- achievements -->
-    <p class="h2" id="achievements">Archievements</p>
-    <section class="py-5 bg-light">
-      <div class="container">
+    <p class="h2 text-here" id="achievements">Archievements</p>
+    <section class="">
+      <div class="container border border-primary">
         <div class="row justify-content-center">
-          <div class="col-md-8">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
+          <div class="col-md-8" >
+            <ul class="list-group list-group-flush " >
+              <li class="list-group-item text-here bg-swap" style="background-color: rgb(210, 154, 242);" >
                 <strong>🏆 Winner</strong> of the Programming Competition
-                <span class="text-muted">(June 2022, Dhaka International University)</span>
+                (June 2022, Dhaka International University)
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-here bg-swap" style="background-color: rgb(210, 154, 242);">
                 <strong>🥈 2nd Place</strong> in the Programming Competition of IT Carnival
-                <span class="text-muted">(2022, Dhaka International University)</span>
+                (2022, Dhaka International University)
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-here bg-swap" style="background-color: rgb(210, 154, 242);">
                 <strong>💻 ICPC 2021 Onsite Contestant</strong>
-                <span class="text-muted">(Rank: 90)</span>
+                (Rank: 90)
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-here bg-swap" style="background-color: rgb(210, 154, 242);">
                 <strong>💻 SUST IUPC</strong>
-                <span class="text-muted">(Rank: 82)</span>
+                (Rank: 82)
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-here bg-swap" style="background-color: rgb(210, 154, 242);">
                 <strong>💻 Qualified</strong> for the
                 <strong>ICPC 2022 Onsite Contest</strong>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item  text-here bg-swap" style="background-color: rgb(210, 154, 242);">
                 <strong>🌍 NASA Space Apps Challenge 2023</strong>
-                <span class="text-muted">(1st Runner-up, Barisal Division, Bangladesh & Global Nominee)</span>
+                (1st Runner-up, Barisal Division, Bangladesh & Global Nominee)
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-here bg-swap" style="background-color: rgb(210, 154, 242);">
                 <strong>💻 Qualified</strong> for the
                 <strong>ICPC 2023 Onsite Contest</strong>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item text-here bg-swap" style="background-color: rgb(210, 154, 242);">
                 <strong>🌍 NASA Space Apps Challenge 2024</strong>
-                <span class="text-muted">(2nd Runner-up, Barisal Division, Bangladesh)</span>
+                (2nd Runner-up, Barisal Division, Bangladesh)
               </li>
             </ul>
           </div>
@@ -257,45 +257,46 @@
       </div>
     </section>
 
+
     <hr class="border border-primary border-3 opacity-50">
 
     <!-- Projects -->
-    <p class="h2" id="projects">Projects</p>
+    <p class="h2 text-here" id="projects">Projects</p>
     <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active ">
-          <div class="card" style="width: 18rem;">
+          <div class="card bg-swap" style="width: 18rem;">
             <img
               src="https://private-user-images.githubusercontent.com/79168756/332150230-66945335-26e8-4806-95c7-22ef1959bf9e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM4NjA5NjUsIm5iZiI6MTczMzg2MDY2NSwicGF0aCI6Ii83OTE2ODc1Ni8zMzIxNTAyMzAtNjY5NDUzMzUtMjZlOC00ODA2LTk1YzctMjJlZjE5NTliZjllLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjEwVDE5NTc0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZjYTlkYjM1NzI1ZDJiNWE3NWIxMTkwNTI0OGRiNzZhNDUzNDUzNWIwZDcwOGJhMWY2ZjQ4ZmJkYTU1OGJlN2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.zXpaf-jAuMBo-0m5ksWBJjLq4IXsd63L7C5iKeXQVwc"
               class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Library Management System</h5>
-              <p class="card-text">Library managemet system will be the ultimate tool for manage a library for both user
+              <h5 class="card-title text-here">Library Management System</h5>
+              <p class="card-text text-here">Library managemet system will be the ultimate tool for manage a library for both user
                 and admins.</p>
               <a href="https://github.com/mursalatul/library-management-system" class="btn btn-primary">Details</a>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="card" style="width: 18rem;">
+          <div class="card bg-swap" style="width: 18rem;">
             <img src="https://github.com/mursalatul/Advanced-CGPA-Calculator/blob/master/data/images/stu1.png?raw=true"
               class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Advanced CGPA Calculator</h5>
-              <p class="card-text">Calculate and manage CGPA with interactive gui based program</p>
+              <h5 class="card-title text-here">Advanced CGPA Calculator</h5>
+              <p class="card-text text-here">Calculate and manage CGPA with interactive gui based program</p>
               <a href="https://github.com/mursalatul/Advanced-CGPA-Calculator" class="btn btn-primary">Details</a>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="card" style="width: 18rem;">
+          <div class="card bg-swap" style="width: 18rem;">
             <img src="https://github.com/mursalatul/Age_Calculator/raw/master/.data/images/P1.png" class="card-img-top"
               alt="...">
             <div class="card-body">
-              <h5 class="card-title">Age Calculator</h5>
-              <p class="card-text">Age calculator is a simple program for calculating age from inputed date to the
+              <h5 class="card-title text-here">Age Calculator</h5>
+              <p class="card-text text-here">Age calculator is a simple program for calculating age from inputed date to the
                 current date or a specific date.</p>
-              <a href="https://github.com/mursalatul/Age_Calculator" class="btn btn-primary">Go somewhere</a>
+              <a href="https://github.com/mursalatul/Age_Calculator" class="btn btn-primary">Details</a>
             </div>
           </div>
         </div>
@@ -383,9 +384,9 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-3 text-here" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright:
-      <a class="text-body" href="https://github.com/mursalatul">Md Mursalatul Islam Pallob</a>
+      <a class="text-body text-here" href="https://github.com/mursalatul"><p class=" text-here">Md Mursalatul Islam Pallob</p></a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -394,7 +395,8 @@
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.bundle.js"></script>
-  <link rel="stylesheet" href="style/style.css">
+  
+  <script src="script/script.js"></script>
 
 </body>
 

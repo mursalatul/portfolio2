@@ -4,9 +4,9 @@ body {
   }
 
   .my-card {
-    background-color: #ffffff;
+    background-color: #c598f8;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
     padding: 30px;
     max-width: 400px;
     margin: 50px auto;
@@ -34,4 +34,8 @@ body {
 
   .my-value {
     color: #6c757d;
+  }
+
+  .card-default-color {
+    background-color: rgb(210, 154, 242);
   }
