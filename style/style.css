@@ -4,7 +4,7 @@ body {
   }
 
   .my-card {
-    background-color: #c598f8;
+    background-color: rgb(210, 154, 242);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
     padding: 30px;
