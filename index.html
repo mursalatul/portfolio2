@@ -17,45 +17,49 @@
 
   <!-- navber -->
 
-    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #b0deff;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#achievements">Achievements</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts">Contacts</a>
-            </li>
-            <button class="btn btn-outline-success mood-btn " type="submit" ><img height="20" src="img/moon-svgrepo-com.svg"></button>
-            <style>
-              .mood-btn {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%; 
-                border: none; 
-                background-color: black; 
-                color: white; 
-                display: flex; 
-                justify-content: center; 
-                align-items: center;
-                font-size: 16px; 
-                cursor: pointer;
-              }
-            </style>
-          </div>
-    </nav>
+  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #b0deff;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+          <button class="btn btn-outline-success mood-btn " type="submit"><img height="20"
+              src="img/moon-svgrepo-com.svg"></button>
+          <style>
+            .mood-btn {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: none;
+              background-color: black;
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 16px;
+              cursor: pointer;
+            }
+          </style>
+      </div>
+  </nav>
 
 
   <div class="container">
@@ -69,15 +73,76 @@
     <hr class="border border-primary border-3 opacity-50">
 
     <!-- about -->
-    <p class="h2">About</p>
-    <p>I am a passionate Python developer with a strong foundation in competitive programming. I enjoy solving complex
-      problems and constantly push myself to improve logical thinking and algorithmic skills. My experience in
-      competitive programming has sharpened my ability to tackle challenges efficiently, and I apply this mindset in my
-      development work. I am always eager to learn, create, and contribute to meaningful projects.</p>
+    <div class="row">
+      <div class="col">
+        <div class="my-card">
+          <p class="my-title">About</p>
+          <p>I am a passionate Python developer with a strong foundation in competitive programming. I enjoy solving
+            complex
+            problems and constantly push myself to improve logical thinking and algorithmic skills. My experience in
+            competitive programming has sharpened my ability to tackle challenges efficiently, and I apply this mindset
+            in
+            my
+            development work. I am always eager to learn, create, and contribute to meaningful projects.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="my-card">
+          <p class="my-title">I have Worked With</p>
+          <p>
+            <ul>
+              <li>CMD based system.</li>
+              <li>Emotion recognization with AI</li>
+              <li>Agricultural Automation</li>
+              <li>Different types of management system using core oop concept</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="my-card">
+          <p class="my-title">Experience</p>
+          <ol>
+            <li>
+              ML model developer <b>[1 year]</b>
+            </li>
+            <li>
+              Programming Contest Problem setter <b>[1 year, more then 40 original questions.]</b>
+            </li>
+            <li>
+              Research Assistant <b>[3 months]</b>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="border border-primary border-3 opacity-50">
+
+    <!-- education -->
+    <div class="my-card">
+      <h1 class="my-title">Academic</h1>
+      <div class="my-content">
+        <div class="my-item">
+          <span class="my-label">University:</span>
+          <span class="my-value">Dhaka International University</span>
+        </div>
+        <div class="my-item">
+          <span class="my-label">Degree:</span>
+          <span class="my-value">Bachelor of Science, Computer Science & Engineering</span>
+        </div>
+        <div class="my-item">
+          <span class="my-label">Graduation Year:</span>
+          <span class="my-value">2025</span>
+        </div>
+      </div>
+    </div>
     <hr class="border border-primary border-3 opacity-50">
 
     <!-- Competitive Programming history -->
-    <p class="h2">Competitive Programming History</p>
+    <p class="h2" id="skills">Competitive Programming History</p>
     <p>Number of Problem Solved: 1400+</p>
     <div class="mx-auto my-auto" id="myChart" style="max-width:700px; height:400px"></div>
 
@@ -329,8 +394,7 @@
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.bundle.js"></script>
-
-  <script src=""></script>
+  <link rel="stylesheet" href="style/style.css">
 
 </body>
 
