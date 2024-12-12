@@ -25,7 +25,6 @@ function swapBodyColor() {
 
 function swapCardColor() {
     let card = document.getElementsByClassName("bg-swap");
-    console.log(card[0])
     for (let i = 0; i < card.length; i++) { // Loop through each element
         let currentColor = window.getComputedStyle(card[i]).backgroundColor; // Get computed color
         if (currentColor === 'rgb(210, 154, 242)') { // Check if color is white
@@ -33,6 +32,16 @@ function swapCardColor() {
         } else {
             card[i].style.backgroundColor = 'rgb(210, 154, 242)'; // Set color to white
         }
+    }
+}
+
+function swapNavberColor() {
+    let navber = document.getElementById("navber-id");
+    if (navber.style.backgroundColor === 'rgb(93, 173, 226)') {
+        navber.style.backgroundColor = 'rgb(75, 96, 106)';
+    }
+    else {
+        navber.style.backgroundColor = 'rgb(93, 173, 226)';
     }
 }
 
@@ -47,5 +56,5 @@ function moodchange() {
     swapBodyColor();
     swapTextColor();
     swapCardColor();
-
+    swapNavberColor();
 }
