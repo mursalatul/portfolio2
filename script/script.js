@@ -8,7 +8,6 @@ function swapTextColor() {
             texts[i].style.color = 'white'; // Set color to white
         }
     }
-    body.style.transition ='background-color 2s ease, transform 2s ease';
 }
 
 
@@ -23,7 +22,6 @@ function swapBodyColor() {
     } else {
         body.style.backgroundColor = 'white'; // Change background to white
     }
-    body.style.transition ='background-color 2s ease, transform 2s ease';
 }
 
 function swapCardColor() {
@@ -36,7 +34,6 @@ function swapCardColor() {
             card[i].style.backgroundColor = 'rgb(93, 173, 226)'; // Set color to white
         }
     }
-    body.style.transition ='background-color 2s ease, transform 2s ease';
 }
 
 function swapNavberColor() {
@@ -47,7 +44,6 @@ function swapNavberColor() {
     else {
         navber.style.backgroundColor = 'rgb(93, 173, 226)';
     }
-    body.style.transition ='background-color 2s ease, transform 2s ease';
 }
 
 
