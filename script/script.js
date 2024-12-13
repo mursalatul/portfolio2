@@ -46,9 +46,22 @@ function swapNavberColor() {
     }
 }
 
+function swapProfilePicture() {
+    let myimg = document.getElementById("profilepicture");
+    let a = '<img src="img/myimg_color.png" width="400">';
+    let b = '<img src="img/myimg_bnw.png" width="400">';
+    console.log(myimg.innerHTML);
+    if (myimg.innerHTML === a) {
+        myimg.innerHTML = b;
+    }
+    else {
+        myimg.innerHTML = a;
+    }
 
+}
 
 function moodchange() {
+    // change btn image and color
     let moodchangebtn = document.getElementById("moodchangebtn");
     if (moodchangebtn.style.backgroundColor === 'black') {
         moodchangebtn.style.backgroundColor = 'white';
@@ -62,4 +75,5 @@ function moodchange() {
     swapTextColor();
     swapCardColor();
     swapNavberColor();
+    swapProfilePicture();
 }
